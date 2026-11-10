@@ -67,8 +67,8 @@ Your App
 ```yaml
 # pubspec.yaml
 dependencies:
-  a2ui_core: ^0.5.0
-  a2ui_flutter: ^0.1.0
+  a2ui_core: ^0.6.0
+  a2ui_flutter: ^0.2.0
   json_schema_builder: ^0.1.7
   genui_x: ^0.0.14
 ```

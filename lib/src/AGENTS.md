@@ -56,8 +56,8 @@ Internal implementation of the `genui_x` package. Contains the HTTP transport la
 - `anthropic_sse_parser.dart`, `openai_sse_parser.dart`, and `gemini_sse_parser.dart` ← used by `genui_x_transport.dart`
 
 ### External
-- `a2ui_agent` (^0.1.0) — `A2uiGenerator`, `A2uiRequestProcessor`, `DirectJsonFormatFactory`, `ContinuingResponseStream`, `RendererState`
-- `a2ui_core` (^0.5.0) — `CatalogApi`, `AgentToRendererMessage`, `A2uiRendererCapabilities`, `A2uiError`
+- `a2ui_agent` (^0.2.0) — `A2uiGenerator`, `A2uiRequestProcessor`, `DirectJsonFormatFactory`, `ContinuingResponseStream`, `RendererState`
+- `a2ui_core` (^0.6.0) — `CatalogApi`, `AgentToRendererMessage`, `A2uiRendererCapabilities`, `A2uiError`
 - `http` (^1.6.0) — `http.Client`, `http.Request`, `http.StreamedResponse`
 
 <!-- MANUAL: -->

@@ -45,8 +45,8 @@ cd example && flutter test
 - `package:genui_x` (path dependency on `../`)
 
 ### External
-- `a2ui_core` ^0.5.0
-- `a2ui_flutter` ^0.1.0
+- `a2ui_core` ^0.6.0
+- `a2ui_flutter` ^0.2.0
 - `json_schema_builder`
 
 <!-- MANUAL: -->
