@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:a2ui_core/a2ui_core.dart';
 import 'package:a2ui_flutter/a2ui_flutter.dart';
@@ -51,7 +52,10 @@ class SurfaceRenderer {
   late final List<Subscription> _subscriptions;
   late final StreamSubscription<AgentToRendererMessage> _messages;
 
-  void _logError(Object error) => debugPrint('[A2UI] $error');
+  // A2uiRendererError has no toString, so it is logged as its JSON.
+  void _logError(Object error) => debugPrint(
+        '[A2UI] ${error is A2uiRendererError ? jsonEncode(error.toJson()) : error}',
+      );
 
   void dispose() {
     unawaited(_messages.cancel());
